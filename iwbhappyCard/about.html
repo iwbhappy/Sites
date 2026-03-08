@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Обо мне — iwbhappy</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-black text-white p-8 font-sans transition-colors duration-500">
+
+    <header class="flex justify-between items-center max-w-6xl mx-auto mb-12">
+      <a href="index.html" class="flex flex-col items-center group">
+        <span class="text-[10px] uppercase tracking-[0.2em] mb-1 font-bold opacity-70 group-hover:opacity-100 transition-opacity">Back to</span>
+        <h1 id="logo-text" class="text-2xl font-bold tracking-tighter uppercase leading-none transition-colors duration-500">iwbhappy</h1>
+      </a>
+
+      <button id="theme-btn" class="cursor-pointer flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold border border-white/20 px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">Dark</span>
+      </button>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      
+      <div id="bio-card" class="md:col-span-3 bg-zinc-900 rounded-[3rem] p-10 flex flex-col justify-between min-h-[400px] transition-colors duration-500">
+        <div>
+          <span class="text-zinc-500 uppercase tracking-widest text-sm font-bold">Biography</span>
+          <h2 class="text-5xl text-white font-bold leading-tight mt-6">
+            Тайыр, или же <span class="text-yellow-200">iwbhappy</span><br>
+            Студент ПГУ
+          </h2>
+        </div>
+        <p class="text-2xl text-zinc-400 max-w-2xl">
+          Учусь в группе CS-104(c). Основное направление - мобильная разработка на <span class="text-white font-semibold">Flutter</span>    
+        </p>
+      </div>
+
+      <div class="bg-white text-black rounded-[3rem] p-8 flex flex-col justify-between">
+        <div class="bg-black text-white w-12 h-12 rounded-full flex items-center justify-center font-bold">
+          🎓
+        </div>
+        <div>
+          <span class="block font-bold text-xl leading-tight">Образование:</span>
+          <span class="text-sm opacity-70 font-medium">ПВКУ 2021-2025</span> <br>
+          <span class="text-sm opacity-70 font-medium">ПГУ 2025-2028</span>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 bg-blue-600 rounded-[3rem] p-8 flex flex-col justify-between min-h-[200px]">
+        <span class="font-bold text-2xl uppercase tracking-tighter italic text-white">Стек</span>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="bg-white/20 px-4 py-1 rounded-full text-sm text-white font-medium">Flutter</span>
+          <span class="bg-white/20 px-4 py-1 rounded-full text-sm text-white font-medium">Dart</span>
+          <span class="bg-white/20 px-4 py-1 rounded-full text-sm text-white font-medium">Supabase</span>
+          <span class="bg-white/20 px-4 py-1 rounded-full text-sm text-white font-medium">Git</span>
+        </div>
+      </div>
+
+      <div class="bg-yellow-200 text-black rounded-[3rem] p-8 flex items-center justify-center text-center">
+        <p class="font-bold text-lg leading-tight italic">
+          "Много хочешь — <br> много будет"
+        </p>
+      </div>
+
+      <div id="interest-card" class="bg-zinc-800 rounded-[3rem] p-8 flex flex-col justify-end min-h-[200px] relative overflow-hidden transition-colors duration-500">
+         <span class="text-zinc-500 text-xs uppercase mb-2">Интересы</span>
+         <span class="font-bold text-xl text-white">Startups, UI/UX, Mobile Architecture, DnD</span>
+         <div class="absolute -top-4 -right-4 w-16 h-16 bg-blue-600 rounded-full blur-2xl opacity-50"></div>
+      </div>
+
+    </main>
+
+    <footer class="max-w-6xl mx-auto mt-12 flex justify-center opacity-30 text-xs uppercase tracking-[0.4em]">
+      Много хочешь - много будет
+    </footer>
+
+  </body>
+</html>

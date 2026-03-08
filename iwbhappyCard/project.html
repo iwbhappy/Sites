@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Проекты — iwbhappy</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-black text-white p-8 font-sans transition-colors duration-500">
+
+    <header class="flex justify-between items-center max-w-6xl mx-auto mb-12">
+      <a href="index.html" class="flex flex-col items-center group decoration-none">
+        <span class="text-[10px] uppercase tracking-[0.2em] mb-1 font-bold opacity-50 group-hover:opacity-100 transition-opacity">Return to</span>
+        <h1 id="logo-text" class="text-2xl font-bold tracking-tighter uppercase leading-none transition-colors duration-500">iwbhappy</h1>
+      </a>
+
+      <button id="theme-btn" class="cursor-pointer flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-bold border border-white/20 px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300">
+        <span id="theme-icon">🌙</span>
+        <span id="theme-text">Dark</span>
+      </button>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-6 gap-4 max-w-6xl mx-auto">
+      
+      <div class="md:col-span-6 mb-4">
+        <h2 class="text-6xl font-bold tracking-tighter uppercase italic">Проекты / <span class="text-zinc-600">Архив</span></h2>
+      </div>
+
+      <div class="md:col-span-4 bg-zinc-900 rounded-[3rem] p-10 flex flex-col justify-between min-h-[350px] border border-white/5 hover:border-white/20 transition-all">
+        <div class="flex justify-between items-start">
+          <span class="bg-blue-600 text-[10px] uppercase font-bold px-3 py-1 rounded-full text-white">Flutter App</span>
+          <span class="text-zinc-500 font-mono text-sm">2025-2026</span>
+        </div>
+        <div>
+          <h3 class="text-5xl font-bold mb-4 tracking-tighter text-white">KazUniHub</h3>
+          <p class="text-zinc-400 text-xl max-w-md">Единая платформа для студентов Казахстана. Агрегатор ресурсов, новостей и студенческих возможностей.</p>
+        </div>
+        <div class="flex gap-4">
+          <span class="bg-blue-600/20 text-blue-400 border border-blue-600/30 px-4 py-1 rounded-full text-xs font-bold">Flutter</span>
+          <span class="bg-blue-600/20 text-blue-400 border border-blue-600/30 px-4 py-1 rounded-full text-xs font-bold">Supabase</span>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 bg-yellow-200 text-black rounded-[3rem] p-8 flex flex-col justify-between min-h-[350px]">
+        <div>
+          <h3 class="text-3xl font-bold leading-tight tracking-tighter">ToU DigitalDay bot</h3>
+          <p class="mt-2 text-sm font-medium opacity-80">Автоматизация регистрации и навигации для ивентов ПГУ.</p>
+        </div>
+        <a href="https://t.me/ToU_by_iwbhappy_bot" target="_blank" class="bg-black text-white w-full py-4 rounded-2xl text-center font-bold text-sm uppercase tracking-tighter transition-transform active:scale-95">Open Telegram</a>
+      </div>
+
+      <div class="md:col-span-3 bg-blue-600 rounded-[3rem] p-10 flex flex-col justify-between min-h-[300px]">
+        <div>
+          <h3 class="text-4xl font-bold italic tracking-tighter text-white">ПВКУ практика</h3>
+          <p class="text-white/80 mt-4 max-w-sm">Внутренняя система учета практики и заданий для предприятия.</p>
+        </div>
+        <div class="flex gap-2">
+            <span class="bg-black/20 backdrop-blur-md px-4 py-1 rounded-full text-xs font-bold text-white">Java</span>
+            <span class="bg-black/20 backdrop-blur-md px-4 py-1 rounded-full text-xs font-bold text-white">Firebase</span>
+        </div>
+      </div>
+
+      <div class="md:col-span-3 bg-zinc-800 rounded-[3rem] p-10 flex flex-col justify-center items-center text-center border-2 border-dashed border-zinc-700">
+        <div class="w-16 h-16 bg-zinc-700/50 rounded-full flex items-center justify-center mb-4">
+            <span class="text-2xl text-zinc-500">+</span>
+        </div>
+        <h3 class="text-2xl font-bold text-zinc-500 uppercase tracking-tighter">Будущие проекты</h3>
+        <p class="text-zinc-600 text-sm mt-2 font-mono">Пока в разработке</p>
+      </div>
+
+    </main>
+
+    <footer class="max-w-6xl mx-auto mt-20 pb-10 flex flex-col md:flex-row justify-between items-center opacity-40 text-[10px] uppercase tracking-[0.2em]">
+      <span>Pavlodar, KZ</span>
+      <span>iwbhappy &copy; 2026</span>
+      <span>Build with Tailwind 4.0</span>
+    </footer>
+
+  </body>
+</html>
