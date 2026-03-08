@@ -20,12 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoText = document.getElementById('logo-text');
 
     if (theme === 'dark') {
-        // Устанавливаем темную тему
         document.documentElement.classList.add('dark');
         document.body.classList.remove('bg-zinc-50', 'text-black');
         document.body.classList.add('bg-black', 'text-white');
         
-        // Кнопка
         themeBtn.classList.remove('border-black/20');
         themeBtn.classList.add('border-white/20');
         themeIcon.textContent = "🌙";
@@ -36,12 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
             logoText.classList.add('text-white');
         }
     } else {
-        // Устанавливаем светлую тему
+        
         document.documentElement.classList.remove('dark');
         document.body.classList.remove('bg-black', 'text-white');
         document.body.classList.add('bg-zinc-50', 'text-black');
-        
-        // Кнопка
+                
         themeBtn.classList.remove('border-white/20');
         themeBtn.classList.add('border-black/20');
         themeIcon.textContent = "☀️";
@@ -53,4 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 }
+
             });
