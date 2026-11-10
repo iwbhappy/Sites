@@ -10,8 +10,8 @@
 | [`ReSkills.html`](ReSkills.html) | ReSkills: лендинг AI-анализа карьеры |
 | [`finance.html`](finance.html) | Страница учёта финансов |
 | [`quiz.html`](quiz.html) | Тест по истории |
-| [`sabi1.html`](sabi1.html) | Тренажёр для подготовки к экзамену ОЭП |
-| [`sabi2.html`](sabi2.html) | Тренажёр по философии |
+| [`economics-exam.html`](economics-exam.html) | Тренажёр для подготовки к экзамену ОЭП |
+| [`philosophy-quiz.html`](philosophy-quiz.html) | Тренажёр по философии |
 
 ## Стек
 
